@@ -128,6 +128,8 @@ setup(name = 'logdissect', version = str(__version__),
             'python-module', 'parser', 'data-analysis', 'library', 'module'],
         packages = ['logdissect', 'logdissect.parsers',
             'logdissect.filters', 'logdissect.output'],
+        install_requires = ['textual>=0.40'],
+        python_requires = '>=3.8',
         entry_points = \
                 { 'console_scripts': [ 'logdissect = logdissect.core:main' ]},
         data_files = ourdata,

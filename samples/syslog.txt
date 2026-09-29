@@ -1,0 +1,10 @@
+Sep 30 08:00:01 shade dbus[593]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Sep 30 08:00:02 shade systemd[1]: Started Hostname Service.
+Sep 30 08:05:10 shade CRON[5030]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Sep 30 09:15:47 shade gnome-shell[22595]: st_widget_get_theme_node called on the widget
+Sep 30 10:30:52 shade dbus-daemon[22491]: Successfully activated service 'org.gnome.Terminal'
+Sep 30 11:45:00 shade sshd[8842]: Accepted publickey for admin from 10.0.0.5 port 51502 ssh2
+Sep 30 12:01:33 shade kernel: [  421.209] CPU: 2 PID: 1188 Comm: python3
+Sep 30 13:22:18 shade nginx[3310]: worker process 3312 exited on signal 9
+Sep 30 14:40:05 shade sudo[4410]: admin : TTY=pts/0 ; COMMAND=/usr/bin/apt update
+Sep 30 15:55:41 shade systemd[1]: Reached target Multi-User System.

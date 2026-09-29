@@ -1,0 +1,5 @@
+|||| this file deliberately matches no parser regex %%%%
+---- random diagnostic blob without timestamps ----
+~~~~ nothing here looks like a known log format ~~~~
+==== repeated unknown content for the fallback demo ====
+!!!! parser auto-detection should fail on these lines ????

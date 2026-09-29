@@ -1,0 +1,5 @@
+10.0.0.5 - - [30/Sep/2026:08:00:01 +0800] "GET /index.html HTTP/1.1" 200 1024 "http://example.com/" "Mozilla/5.0"
+10.0.0.6 - - [30/Sep/2026:09:15:00 +0800] "POST /api/login HTTP/1.1" 302 0 "-" "curl/7.81"
+10.0.0.5 - - [30/Sep/2026:10:45:30 +0800] "GET /static/app.css HTTP/1.1" 304 0 "http://example.com/" "Mozilla/5.0"
+10.0.0.9 - - [30/Sep/2026:12:30:22 +0800] "GET /missing HTTP/1.1" 404 512 "-" "Mozilla/5.0"
+10.0.0.6 - - [30/Sep/2026:15:10:11 +0800] "GET /dashboard HTTP/1.1" 200 4096 "-" "curl/7.81"

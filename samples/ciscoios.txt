@@ -1,0 +1,5 @@
+Sep 30 08:00:01 switch01 10: config_tty: %SYS-5-CONFIG_I: Configured from console by vty0
+Sep 30 09:15:00 router01 4: link_mgr: %LINK-3-UPDOWN: Interface GigabitEthernet0/1 changed state to up
+Sep 30 10:45:30 switch01 10: proto_mgr: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan10 changed state to down
+Sep 30 12:30:22 router01 4: acl_logger: %SEC-6-IPACCESSLOGP: list 100 denied tcp 10.0.0.9(33100) -> 10.0.0.2(80)
+Sep 30 15:10:11 switch01 10: sys_mgr: %SYS-6-LOGGINGHOST_STARTSTOP: Logging to host 10.0.0.20 stopped

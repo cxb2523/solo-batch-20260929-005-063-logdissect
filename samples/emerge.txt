@@ -1,0 +1,5 @@
+1780243201:  >>> emerge (1 of 4) sys-libs/glibc-2.39
+1780246800:  === (1 of 4) Compiling (sys-libs/glibc-2.39::gentoo)
+1780250400:  >>> emerge (2 of 4) app-shells/bash-5.2
+1780254000:  === (2 of 4) Post-Build Cleaning (app-shells/bash-5.2::gentoo)
+1780257600:  *** Finished. Cleaning up...
