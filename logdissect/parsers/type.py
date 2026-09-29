@@ -103,7 +103,12 @@ class ParseModule:
                                 + entry['month'] + entry['day'] + \
                                 entry['tstamp']
                         entry['year'] = str(entryyear)
-                    if self.tzone:
+                    # flowtui fix: ISO timestamps carry their own +HHMM
+                    # offset (set by convert_iso_datestamp); only apply -t
+                    # / the host offset when the line did not provide one.
+                    if entry.get('tzone'):
+                        pass
+                    elif self.tzone:
                         entry['tzone'] = self.tzone
                     else:
                         entry['tzone'] = self.backuptzone

@@ -93,3 +93,6 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# flowtui local diagnostic state
+.flowtui-mru.json

@@ -24,6 +24,7 @@ from time import localtime
 from time import timezone
 from time import altzone
 from datetime import datetime, timedelta
+import re
 
 def convert_standard_datestamp(entry):
     """Set date and time attributes based on a standard date stamp"""
@@ -79,12 +80,16 @@ def convert_nodate_datestamp(entry, datedata):
 def convert_iso_datestamp(entry):
     """Set date and time attributes based on an iso date stamp"""
     # Set our attributes:
+    # flowtui fix: strip() removed individual leading/trailing chars
+    # instead of the - T : separators, and a colon offset like +08:00 is
+    # 6 chars wide; translate both into the numeric form the rest of the
+    # pipeline expects (numeric_date_stamp / +HHMM tzone).
     if entry['date_stamp'][-1] == 'Z':
         tzone = '+0000'
-        datestamp = entry['date_stamp'][:-1].strip('-').strip('T').strip(':')
+        datestamp = re.sub(r'[-T:]', '', entry['date_stamp'][:-1])
     else:
-        tzone = entry['date_stamp'][-5:].strip(':')
-        datestamp = entry['date_stamp'][:-6].strip('-').strip('T').strip(':')
+        tzone = entry['date_stamp'][-6:].replace(':', '')
+        datestamp = re.sub(r'[-T:]', '', entry['date_stamp'][:-6])
 
     entry['year'] = datestamp[0:4]
     entry['month'] = datestamp[4:6]
